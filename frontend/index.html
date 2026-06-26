@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Clinical Workflow Management System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Clinical Workflow Management System</h1>
+
+  <section class="card">
+    <h2>Add Patient Visit</h2>
+
+    <form id="visitForm">
+      <input type="text" id="firstName" placeholder="First Name" required>
+      <input type="text" id="lastName" placeholder="Last Name" required>
+      <input type="date" id="dob" required>
+      <input type="text" id="phone" placeholder="Phone Number">
+      <input type="text" id="department" placeholder="Department" required>
+      <input type="text" id="provider" placeholder="Provider" required>
+
+      <button type="submit">Create Visit</button>
+    </form>
+  </section>
+
+  <section class="card">
+    <h2>Active Visits</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Patient</th>
+          <th>Department</th>
+          <th>Provider</th>
+          <th>Status</th>
+          <th>Check-In Time</th>
+          <th>Update Status</th>
+        </tr>
+      </thead>
+      <tbody id="visitTable"></tbody>
+    </table>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
